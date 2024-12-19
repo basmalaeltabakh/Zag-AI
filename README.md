@@ -126,4 +126,70 @@ Strings are sequences of characters enclosed in either single quotes (`'`) or do
 
 24. **`partition(separator)`**  
     - Splits the string into three parts: before, the separator, and after.
+---
+
+## Lists 
+
+A list is a collection of items in an ordered sequence. Below are the common list methods you can use in Python:
+
+1. **`append(item)`**
+   - Adds an item to the end of the list.
+   
+2. **`extend(iterable)`**
+   - Adds all elements of an iterable (like another list or a tuple) to the end of the list.
+   
+3. **`insert(index, item)`**
+   - Inserts an item at a specified index.
+
+
+4. **`remove(item)`**
+   - Removes the first occurrence of an item in the list. If the item is not found, it returns a `ValueError`.
+  
+
+5. **`pop(index)`**
+   - Removes and returns the item at the specified index. If no index is provided, it removes and returns the last item.
+   
+
+6. **`clear()`**
+   - Removes all items from the list.
+
+7. **`index(item)`**
+   - Returns the index of the first occurrence of an item. Raises a `ValueError` if the item is not found.
+ .
+
+8. **`count(item)`**
+   - Returns the number of times an item appears in the list.
+
+9. **`sort()`**
+   - Sorts the items of the list in ascending order. You can specify a custom sort order using the `reverse` and `key` parameters.
+  
+
+10. **`reverse()`**
+    - Reverses the elements of the list in place.
+
+11. **`copy()`**
+    - Returns a shallow copy of the list.
+
+12. **`join(iterable)`**
+    - Joins all items in the list into a string, with the specified separator between each item.
+
+13. **`list()`**
+    - Converts an iterable (like a string, tuple, or set) into a list.
+
+14. **`min()`**
+    - Returns the smallest item in the list.
+
+15. **`max()`**
+    - Returns the largest item in the list.
+    
+
+16. **`sum()`**
+    - Returns the sum of all items in the list (only works for numeric values).
+
+17. **`enumerate()`**
+    - Returns an iterator that produces pairs of an index and an item from the list.
+
+18. **`copy()`**
+    - Creates a shallow copy of the list.
+---
 
