@@ -6,7 +6,7 @@
 #  1. Python Summary
 
 ## Python Basics
-This summary provides an overview of Python fundamentals, designed to help beginners understand the essential concepts:
+This summary provides an overview of Python fundamentals
 
 1. `print()` => Used to display text or values on the screen.  
 2. `input()` => Used to get input from the user as a string.  
