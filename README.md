@@ -20,27 +20,27 @@ This summary provides an overview of Python fundamentals
    - Enclosed in single `' '` or double `" "` quotes.  
    
 2. **Numbers**
-   - `int` => Integer (e.g., 10)  
-   - `float` => Floating point number (e.g., 10.1)  
+   - `int` => Integer (10)  
+   - `float` => Floating point number (10.1)  
 
 3. **Booleans**
    - Represents two values: `True` or `False`.  
 
 4. **Lists**
    - Used to store multiple items in a single variable.  
-   Example: `Grades = ['A', 'B', 'C', 'D', 'F']`
+   EX: `Grades = ['A', 'B', 'C', 'D', 'F']`
 
 5. **Dictionaries**
    - Store data in key-value pairs.  
-   Example: `person = {"name": "Basmala", "age": 19}`  
+   EX: `person = {"name": "Basmala", "age": 19}`  
 
 6. **Sets**
    - An unordered collection of unique items.  
-   Example: `colors = {"red", "blue", "green"}`  
+   EX: `colors = {"red", "blue", "green"}`  
 
 7. **Tuples**
    - Similar to lists, but immutable (cannot be changed).  
-   Example: `dimensions = (1920, 1080)`  
+   EX: `dimensions = (1920, 1080)`  
 
 ---
 
