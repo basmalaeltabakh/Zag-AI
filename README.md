@@ -131,7 +131,7 @@ Strings are sequences of characters enclosed in either single quotes (`'`) or do
 ## Lists 
 
 A list is a collection of items in an ordered sequence. Below are the common list methods you can use in Python:
-
+### Common Lists Methods
 1. **`append(item)`**
    - Adds an item to the end of the list.
    
@@ -193,3 +193,71 @@ A list is a collection of items in an ordered sequence. Below are the common lis
     - Creates a shallow copy of the list.
 ---
 
+## Tuples
+
+### What are Tuples?
+- A tuple is an unchangeable collection of items, where each item can be of a different data type.
+- Tuples are defined using parentheses `()` and are faster and more memory-efficient than lists.
+  - **Why?** Becouse tuples are immutable (cannot be modified), they are inherently faster.
+
+### Why Use Tuples?
+- **To store fixed collections of data**: When the data shouldn't be changed after creation.
+- **Efficiency**: They are faster and use less memory compared to lists.
+- **Dictionary Keys**: Tuples can be used as keys in dictionaries because they are immutable.
+
+---
+
+### Common Tuples Methods
+
+1. **`len()`**  
+   - Returns the number of elements in the tuple.  
+     ```python
+     len((1, 2, 3))  # Output: 3
+     ```
+
+2. **`index(value)`**  
+   - Returns the first index of the specified value.  
+   
+
+3. **`count(value)`**  
+   - Counts how many times a value appears in the tuple.  
+    
+
+4. **`tuple()`**  
+   - Converts an iterable (like a list) into a tuple.  
+     ```python
+     tuple([1, 2, 3])  # Output: (1, 2, 3)
+     ```
+
+5. **Slicing**  
+   - Extracts a portion of the tuple using slicing (`[start:end:step]`).  
+     ```python
+     (1, 2, 3, 4)[1:3]  # Output: (2, 3)
+     ```
+
+6. **Concatenation**  
+   - Combines two tuples using the `+` operator.  
+     ```python
+     (1, 2) + (3, 4)  # Output: (1, 2, 3, 4)
+     ```
+
+7. **Repetition**  
+   - Repeats the tuple multiple times using the `*` operator.  
+     ```python
+     (1, 2) * 2  # Output: (1, 2, 1, 2)
+     ```
+   - **Note**: This also works with strings and lists.
+
+8. **Membership Testing**  
+   - Checks if a value exists in the tuple using the `in` keyword.  
+     ```python
+     2 in (1, 2, 3)  # Output: True
+     ```
+
+9. **Max and Min**  
+   - **`max(tuple)`**: Returns the maximum value.  
+   - **`min(tuple)`**: Returns the minimum value.  
+     ```python
+     max((1, 2, 3))  # Output: 3
+     min((1, 2, 3))  # Output: 1
+     ```
