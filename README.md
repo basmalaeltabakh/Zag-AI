@@ -261,3 +261,63 @@ A list is a collection of items in an ordered sequence. Below are the common lis
      max((1, 2, 3))  # Output: 3
      min((1, 2, 3))  # Output: 1
      ```
+---
+## Sets
+
+- A set is an unordered collection of unique elements.
+- Sets are defined using curly braces `{}` or the `set()` function.
+- They are mutable, meaning you can add or remove elements, but the elements themselves must be immutable.
+
+### Why Use Sets?
+- To store unique items without duplicates.
+- For fast membership testing using the `in` keyword.
+- Useful for operations like union, intersection, and difference.
+
+### Common Sets Methods
+
+1. **`add(value)`**
+   - Adds a single value to the set.
+
+2. **`update(iterable)`**
+   - Adds multiple elements from an iterable (like a list) to the set.
+
+3. **`remove(value)`**
+   - Removes the specified value. Raises a `KeyError` if the value does not exist.
+
+4. **`discard(value)`**
+   - Removes the specified value without raising an error if the value does not exist.
+
+5. **`pop()`**
+   - Removes and returns an arbitrary element from the set. Raises a `KeyError` if the set is empty.
+
+6. **`clear()`**
+   - Removes all elements from the set.
+
+7. **`union(*other_sets)`**
+   - Returns a new set with all unique elements from all sets.
+   - We can use `|` to perform union.
+
+8. **`intersection(*other_sets)`**
+   - Returns a new set with common elements between sets.
+   - We can use `&` to perform intersection.
+
+9. **`difference(*other_sets)`**
+   - Returns a new set with elements only in the original set, not in the others.
+   - We can use `-` to perform difference.
+
+10. **`symmetric_difference(other_set)`**
+    - Returns a new set with elements in either of the sets but not in both.
+    - We can use `^` to perform symmetric difference.
+
+11. **`issubset(other_set)`**
+    - Checks if all elements of the set are in another set.
+
+12. **`issuperset(other_set)`**
+    - Checks if the set contains all elements of another set.
+
+13. **`isdisjoint(other_set)`**
+    - Checks if the two sets have no elements in common.
+
+14. **`copy()`**
+    - Creates and returns a shallow copy of the set.
+---
