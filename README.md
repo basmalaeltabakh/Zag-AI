@@ -321,3 +321,60 @@ A list is a collection of items in an ordered sequence. Below are the common lis
 14. **`copy()`**
     - Creates and returns a shallow copy of the set.
 ---
+## Dictionaries
+
+- A dictionary is an unordered collection of key-value pairs.
+- Dictionaries are defined using curly braces `{}` or the `dict()` function.
+- Keys must be immutable, while values can be of any data type.
+- Dictionaries are mutable, meaning you can add, remove, and modify elements.
+
+### Why Use Dictionaries?
+- To store data in key-value pairs.
+- Ideal for fast lookups based on keys.
+- Efficient for operations like updating values, removing keys, and checking for the existence of keys.
+
+### Common Dictionary Methods
+
+1. **`clear()`**
+   - Removes all elements from the dictionary.
+
+2. **`copy()`**
+   - Returns a shallow copy of the dictionary.
+
+3. **`fromkeys(keys, value=None)`**
+   - Creates a new dictionary from the given sequence of keys, with optional values assigned to each key.
+
+4. **`get(key, default=None)`**
+   - Returns the value for the specified key. If the key doesn't exist, returns the default value (None by default).
+
+5. **`items()`**
+   - Returns a view object displaying a list of dictionary’s key-value tuple pairs.
+
+6. **`keys()`**
+   - Returns a view object displaying a list of all the dictionary’s keys.
+
+7. **`pop(key, default=None)`**
+   - Removes and returns the value for the specified key. If the key doesn't exist, returns the default value (None by default).
+
+8. **`popitem()`**
+   - Removes and returns the last key-value pair added to the dictionary as a tuple.
+
+9. **`setdefault(key, default=None)`**
+   - Returns the value of the key if it exists, otherwise inserts the key with a specified default value and returns the default value.
+
+10. **`update(other_dict)`**
+    - Updates the dictionary with key-value pairs from another dictionary or an iterable of key-value pairs.
+
+11. **`values()`**
+    - Returns a view object displaying a list of all the dictionary’s values.
+
+12. **`get(key)`**
+    - Returns the value of the specified key. Returns `None` if the key does not exist.
+
+13. **`del` (Delete)**
+    - Removes the specified key-value pair from the dictionary.
+
+14. **`in` (Membership Testing)**
+    - Checks if a key exists in the dictionary.
+    - Example: `key in my_dict`
+---
