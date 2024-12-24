@@ -409,3 +409,63 @@ Python provides various types of operators for performing operations:
 | `or`     | Returns `True` if at least one condition is true | `(5 > 10 or 10 > 5)` |
 | `not`    | Reverses the result    | `not(5 > 2)`        |
 ---
+
+## Python Conditions
+
+ ###  **Basic If Statement**
+Execute a block of code if a condition is `True`.
+
+### Syntax:
+```python
+if condition:
+    # Code to execute if condition is True
+ ```       
+  ### **If-Else Statement**
+ Execute one block of code if a condition is True, and another block if it is False.
+
+  ### Syntax:
+```python
+if condition:
+    # Code to execute if condition is True
+else:
+    # Code to execute if condition is False
+ ```
+###  **If-Elif-Else Statement**
+ Used to test multiple conditions sequentially
+
+### Syntax:
+```python
+if condition1:
+    # Code to execute if condition1 is True
+elif condition2:
+    # Code to execute if condition2 is True
+else:
+    # Code to execute if none of the conditions are True
+ ```
+
+###  **Nested If**
+An if statement inside another if statement to check complex conditions.
+
+### Syntax:
+```python
+if condition1:
+    if condition2:
+        # Code to execute if both conditions are True
+
+ ```
+###  ** Short-Hand If**
+A concise way to write a single condition.
+
+### Syntax:
+```python
+  if condition: statement
+ ```
+
+###  ** Short-Hand If-Else (Ternary Operator)**
+Write if-else in a single line.
+
+### Syntax:
+```python
+statement_if_true if condition else statement_if_false
+ ```
+---
