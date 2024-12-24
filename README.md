@@ -469,3 +469,30 @@ Write if-else in a single line.
 statement_if_true if condition else statement_if_false
  ```
 ---
+## Python Loops 
+
+ loops allow us to execute a block of code repeatedly. 
+
+### 1. `for` loop
+The `for` loop is used to iterate over a sequence (like a list, tuple, dictionary, set, or string). It iterates over each element in the sequence.
+
+### Syntax:
+```python
+for variable in sequence:
+    # code block
+```
+### 2. `while` loop
+
+The `while` loop repeatedly executes a block of code as long as a given condition is True.
+### Syntax:
+```python
+while condition:
+    # code block
+```
+
+### 3. `break` statement
+The `break` statement is used to terminate the loop prematurely when a certain condition is met
+
+### 4. `continue` statement
+The `continue` statement skips the current iteration and moves to the next iteration in the loop.
+
