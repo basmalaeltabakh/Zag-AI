@@ -378,3 +378,34 @@ A list is a collection of items in an ordered sequence. Below are the common lis
     - Checks if a key exists in the dictionary.
     - Example: `key in my_dict`
 ---
+## Operators
+Python provides various types of operators for performing operations:
+
+### 1. **Arithmetic Operators**:
+| Operator | Description      | Example      |
+|----------|------------------|--------------|
+| `+`      | Addition         | `5 + 2 = 7`  |
+| `-`      | Subtraction      | `5 - 2 = 3`  |
+| `*`      | Multiplication   | `5 * 2 = 10` |
+| `/`      | Division         | `5 / 2 = 2.5`|
+| `//`     | Floor Division   | `5 // 2 = 2` |
+| `%`      | Modulus          | `5 % 2 = 1`  |
+| `**`     | Exponentiation   | `5 ** 2 = 25`|
+
+### 2. **Comparison Operators**:
+| Operator | Description                | Example      |
+|----------|----------------------------|--------------|
+| `==`     | Equal                      | `5 == 5`     |
+| `!=`     | Not equal                  | `5 != 2`     |
+| `<`      | Less than                  | `5 < 10`     |
+| `>`      | Greater than               | `10 > 5`     |
+| `<=`     | Less than or equal to      | `5 <= 5`     |
+| `>=`     | Greater than or equal to   | `10 >= 5`    |
+
+### 3. **Logical Operators**:
+| Operator | Description            | Example             |
+|----------|------------------------|---------------------|
+| `and`    | Returns `True` if both conditions are true | `(5 > 2 and 10 > 5)` |
+| `or`     | Returns `True` if at least one condition is true | `(5 > 10 or 10 > 5)` |
+| `not`    | Reverses the result    | `not(5 > 2)`        |
+---
