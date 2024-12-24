@@ -42,8 +42,8 @@ while True:
     grade = CalcGrade(marks)
 
 
-    student_data = {"Name": name, "Subject": subject, "Marks": marks, "Grade": grade}
-    Students.append(student_data)
+    studentData = {"Name": name, "Subject": subject, "Marks": marks, "Grade": grade}
+    Students.append(studentData)
 
     AddStudent = input("Do you want to add another student? (yes/no): ").lower()
     if AddStudent != 'yes':
