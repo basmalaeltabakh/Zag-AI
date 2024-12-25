@@ -494,5 +494,109 @@ while condition:
 The `break` statement is used to terminate the loop prematurely when a certain condition is met
 
 ### 4. `continue` statement
-The `continue` statement skips the current iteration and moves to the next iteration in the loop.
 
+The `continue` statement skips the current iteration and moves to the next iteration in the loop.
+---
+# **Functions**
+- A function in Python is a block of reusable code designed to perform a specific task.
+
+### **Why Functions?**
+Functions help in:
+- Reducing code redundancy
+- Improving readability
+- Enabling modular programming
+
+### **Syntax**
+```python
+def function_name(parameters):
+    """
+    Optional Docstring
+    """
+    # Function body
+    return value  # Optional
+```
+## **Types of Functions**
+
+### 1. **Built-in Functions**
+- Predefined in Python (e.g., `len()`, `print()`, `sum()`, etc.).
+- Do not require explicit definition.
+
+### 2. **User-Defined Functions**
+- Created by the user using the `def` keyword.
+
+### 3. **Anonymous (Lambda) Functions**
+- Functions without a name.
+- Defined using the `lambda` keyword.
+- Used for short, simple operations.
+
+**Syntax**: 
+```python
+lambda arguments: expression
+```
+### 4. **Recursive Functions**
+- Functions that call themselves.
+- Used for solving problems like factorial, Fibonacci, etc.
+
+###5. **Higher-Order Functions**
+- Accept functions as arguments or return functions.
+  Ex: map(), filter(), reduce().
+
+## **Function Properties**
+
+### 1. **Default Parameters**
+- Parameters can have default values, making them optional.
+
+**Example**: 
+```python
+def Myself(name="Basmala"):
+    return f"Hello, {name}!"
+print(Myself())  # Output: Hello, Basmala!
+### 2. **Keyword Arguments**
+- Arguments can be passed by name, improving readability.
+```
+**Example**: 
+```python
+def multiply(a, b):
+    return a * b
+print(multiply(b=3, a=2))  # Output: 6
+```
+
+### 3. **Variable-Length Arguments**
+A. **`*args`**: Accepts a variable number of positional arguments.
+
+**Example**:
+```python
+def sum_all(*args):
+    return sum(args)
+print(sum_all(1, 2, 3, 4))  # Output: 10
+```
+### B. **`**kwargs`**: Accepts a variable number of keyword arguments.
+
+**Example**:
+```python
+def print_details(**kwargs):
+    for key, value in kwargs.items():
+        print(f"{key}: {value}")
+print_details(name="Basmala", age=20)  
+# Output:
+# name: Basmala
+# age: 20
+```
+### 4. **Return Statement**
+- Functions can return a value using the `return` statement.
+- If no `return` statement is provided, the function returns `None` by default.
+
+**Example**:
+```python
+def greet(name):
+    return f"Hello, {name}!"
+
+message = greet("Basmala")
+print(message)  # Output: Hello, Basmala!
+
+def no_return():
+    pass
+
+result = no_return()
+print(result)  # Output: None
+```
