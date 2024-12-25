@@ -443,7 +443,7 @@ else:
     # Code to execute if none of the conditions are True
  ```
 
-###  **Nested If**
+### **Nested If**
 An if statement inside another if statement to check complex conditions.
 
 ### Syntax:
@@ -453,7 +453,7 @@ if condition1:
         # Code to execute if both conditions are True
 
  ```
-###  ** Short-Hand If**
+### **Short-Hand If**
 A concise way to write a single condition.
 
 ### Syntax:
@@ -461,7 +461,7 @@ A concise way to write a single condition.
   if condition: statement
  ```
 
-###  ** Short-Hand If-Else (Ternary Operator)**
+### **Short-Hand If-Else (Ternary Operator)**
 Write if-else in a single line.
 
 ### Syntax:
