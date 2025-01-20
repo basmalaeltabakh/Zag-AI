@@ -599,3 +599,53 @@ def no_return():
 result = no_return()
 print(result)  # Output: None
 ```
+---
+## File Handling in Python
+
+Python provides various tools and techniques for working with files and directories.
+
+---
+
+### File Modes
+
+Python supports several file modes for different operations:
+
+- **`"a"` (Append)**: Opens a file for appending data. Creates the file if it does not exist.
+- **`"r"` (Read)**: Opens a file for reading. This is the default mode. Raises an error if the file does not exist.
+- **`"w"` (Write)**: Opens a file for writing. Creates the file if it does not exist.
+- **`"x"` (Create)**: Creates a file. Raises an error if the file already exists.
+
+---
+
+### Working with Directories
+
+The `os` module provides functions to work with directories:
+
+- **`os.getcwd()`**: Returns the current working directory.
+- **`os.path.dirname(os.path.abspath(__file__))`**: Returns the directory of the currently executing script.
+- **`os.chdir(path)`**: Changes the current working directory to the specified path.
+- **`os.path.abspath(file)`**: Returns the absolute path of the specified file.
+
+---
+
+### Important File Operations
+
+Here are some key file operations in Python:
+
+- **`file.truncate(size)`**: Resizes the file to the specified size. If no size is specified, it truncates the file to the current position.
+- **`file.tell()`**: Returns the current position of the file pointer.
+- **`file.seek(offset)`**: Moves the file pointer to the specified offset.
+- **`os.remove(path)`**: Deletes the file at the specified path.
+
+---
+
+### Notes
+
+- Always close files after performing operations using `file.close()` to free up system resources.
+- Use the `with` statement for better file handling, as it automatically closes the file after the operations are complete. 
+
+### Example:
+```python
+with open("example.txt", "w") as file:
+    file.write("Basmala")  # File is automatically closed after this block
+```
