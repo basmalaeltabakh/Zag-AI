@@ -649,3 +649,94 @@ Here are some key file operations in Python:
 with open("example.txt", "w") as file:
     file.write("Basmala")  # File is automatically closed after this block
 ```
+---
+## Python Built-in Functions
+---
+
+### 1. Input/Output Functions
+
+- **`print()`**: Outputs text or variables to the console.
+- **`input()`**: Reads input from the user as a string.
+
+---
+
+### 2. Type Conversion Functions
+
+- **`int()`**: Converts a value to an integer.
+- **`float()`**: Converts a value to a floating-point number.
+- **`str()`**: Converts a value to a string.
+- **`bool()`**: Converts a value to a boolean (`True` or `False`).
+
+---
+
+### 3. Mathematical Functions
+
+- **`abs()`**: Returns the absolute value of a number.
+- **`round()`**: Rounds a number to the nearest integer or specified decimal places.
+- **`min()`**: Returns the smallest value in a sequence.
+- **`max()`**: Returns the largest value in a sequence.
+- **`sum()`**: Returns the sum of all items in a sequence.
+
+---
+
+### 4. Sequence Functions
+
+- **`len()`**: Returns the length of a sequence (e.g., string, list, tuple).
+- **`sorted()`**: Returns a sorted list of the specified iterable.
+- **`reversed()`**: Returns a reversed iterator of a sequence.
+- **`enumerate()`**: Adds a counter to an iterable and returns it as an enumerate object.
+
+---
+
+### 5. String Functions
+
+- **`str.upper()`**: Converts a string to uppercase.
+- **`str.lower()`**: Converts a string to lowercase.
+- **`str.strip()`**: Removes leading and trailing whitespace.
+- **`str.split()`**: Splits a string into a list based on a delimiter.
+- **`str.join()`**: Joins elements of a list into a string.
+
+---
+
+### 6. List Functions
+
+- **`list.append()`**: Adds an element to the end of a list.
+- **`list.remove()`**: Removes the first occurrence of a value from a list.
+- **`list.pop()`**: Removes and returns an element at a given index (default is the last element).
+
+---
+
+### 7. Dictionary Functions
+
+- **`dict.keys()`**: Returns a list of all keys in a dictionary.
+- **`dict.values()`**: Returns a list of all values in a dictionary.
+- **`dict.items()`**: Returns a list of key-value pairs as tuples.
+
+---
+
+### 8. File Handling Functions
+
+- **`open()`**: Opens a file and returns a file object.
+- **`file.read()`**: Reads the entire content of a file.
+- **`file.write()`**: Writes data to a file.
+- **`file.close()`**: Closes the file.
+
+---
+
+### 9. Other Useful Functions
+
+- **`range()`**: Generates a sequence of numbers.
+- **`type()`**: Returns the type of an object.
+- **`isinstance()`**: Checks if an object is an instance of a specific class.
+- **`help()`**: Displays documentation for a function or module.
+
+---
+
+### 10. Lambda and Functional Programming
+
+- **`map()`**: Applies a function to all items in an iterable.
+- **`filter()`**: Filters items in an iterable based on a condition.
+- **`reduce()`**: Applies a function cumulatively to items in an iterable (requires the `functools` module).
+
+---
+
