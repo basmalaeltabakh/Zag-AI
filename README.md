@@ -378,3 +378,365 @@ A list is a collection of items in an ordered sequence. Below are the common lis
     - Checks if a key exists in the dictionary.
     - Example: `key in my_dict`
 ---
+## Operators
+Python provides various types of operators for performing operations:
+
+### 1. **Arithmetic Operators**:
+| Operator | Description      | Example      |
+|----------|------------------|--------------|
+| `+`      | Addition         | `5 + 2 = 7`  |
+| `-`      | Subtraction      | `5 - 2 = 3`  |
+| `*`      | Multiplication   | `5 * 2 = 10` |
+| `/`      | Division         | `5 / 2 = 2.5`|
+| `//`     | Floor Division   | `5 // 2 = 2` |
+| `%`      | Modulus          | `5 % 2 = 1`  |
+| `**`     | Exponentiation   | `5 ** 2 = 25`|
+
+### 2. **Comparison Operators**:
+| Operator | Description                | Example      |
+|----------|----------------------------|--------------|
+| `==`     | Equal                      | `5 == 5`     |
+| `!=`     | Not equal                  | `5 != 2`     |
+| `<`      | Less than                  | `5 < 10`     |
+| `>`      | Greater than               | `10 > 5`     |
+| `<=`     | Less than or equal to      | `5 <= 5`     |
+| `>=`     | Greater than or equal to   | `10 >= 5`    |
+
+### 3. **Logical Operators**:
+| Operator | Description            | Example             |
+|----------|------------------------|---------------------|
+| `and`    | Returns `True` if both conditions are true | `(5 > 2 and 10 > 5)` |
+| `or`     | Returns `True` if at least one condition is true | `(5 > 10 or 10 > 5)` |
+| `not`    | Reverses the result    | `not(5 > 2)`        |
+---
+
+## Python Conditions
+
+ ### 1. **Basic If Statement**
+- Execute a block of code if a condition is `True`.
+
+### Syntax:
+```python
+if condition:
+    # Code to execute if condition is True
+ ```       
+  ### 2. **If-Else Statement**
+- Execute one block of code if a condition is True, and another block if it is False.
+
+  ### Syntax:
+```python
+if condition:
+    # Code to execute if condition is True
+else:
+    # Code to execute if condition is False
+ ```
+### 3. **If-Elif-Else Statement**
+- Used to test multiple conditions sequentially
+
+### Syntax:
+```python
+if condition1:
+    # Code to execute if condition1 is True
+elif condition2:
+    # Code to execute if condition2 is True
+else:
+    # Code to execute if none of the conditions are True
+ ```
+
+### 4. **Nested If**
+- An if statement inside another if statement to check complex conditions.
+
+### Syntax:
+```python
+if condition1:
+    if condition2:
+        # Code to execute if both conditions are True
+
+ ```
+### 5. **Short-Hand If**
+- A concise way to write a single condition.
+
+### Syntax:
+```python
+  if condition: statement
+ ```
+
+### 6. **Short-Hand If-Else (Ternary Operator)**
+- Write if-else in a single line.
+
+### Syntax:
+```python
+statement_if_true if condition else statement_if_false
+ ```
+---
+## Python Loops 
+
+ - loops allow us to execute a block of code repeatedly. 
+
+### 1. `for` loop
+- The `for` loop is used to iterate over a sequence (like a list, tuple, dictionary, set, or string). It iterates over each element in the sequence.
+
+### Syntax:
+```python
+for variable in sequence:
+    # code block
+```
+### 2. `while` loop
+
+- The `while` loop repeatedly executes a block of code as long as a given condition is True.
+### Syntax:
+```python
+while condition:
+    # code block
+```
+
+### 3. `break` statement
+- The `break` statement is used to terminate the loop prematurely when a certain condition is met
+
+### 4. `continue` statement
+- The `continue` statement skips the current iteration and moves to the next iteration in the loop.
+---
+# **Functions**
+- A function in Python is a block of reusable code designed to perform a specific task.
+
+### **Why Functions?**
+Functions help in:
+- Reducing code redundancy
+- Improving readability
+- Enabling modular programming
+
+### **Syntax**
+```python
+def function_name(parameters):
+    """
+    Optional Docstring
+    """
+    # Function body
+    return value  # Optional
+```
+## **Types of Functions**
+
+### 1. **Built-in Functions**
+- Predefined in Python (e.g., `len()`, `print()`, `sum()`, etc.).
+- Do not require explicit definition.
+
+### 2. **User-Defined Functions**
+- Created by the user using the `def` keyword.
+
+### 3. **Anonymous (Lambda) Functions**
+- Functions without a name.
+- Defined using the `lambda` keyword.
+- Used for short, simple operations.
+
+**Syntax**: 
+```python
+lambda arguments: expression
+```
+### 4. **Recursive Functions**
+- Functions that call themselves.
+- Used for solving problems like factorial, Fibonacci, etc.
+
+###5. **Higher-Order Functions**
+- Accept functions as arguments or return functions.
+  Ex: map(), filter(), reduce().
+
+## **Function Properties**
+
+### 1. **Default Parameters**
+- Parameters can have default values, making them optional.
+
+**Example**: 
+```python
+def Myself(name="Basmala"):
+    return f"Hello, {name}!"
+print(Myself())  # Output: Hello, Basmala!
+### 2. **Keyword Arguments**
+- Arguments can be passed by name, improving readability.
+```
+**Example**: 
+```python
+def multiply(a, b):
+    return a * b
+print(multiply(b=3, a=2))  # Output: 6
+```
+
+### 3. **Variable-Length Arguments**
+A. **`*args`**: Accepts a variable number of positional arguments.
+
+**Example**:
+```python
+def sum_all(*args):
+    return sum(args)
+print(sum_all(1, 2, 3, 4))  # Output: 10
+```
+### B. **`**kwargs`**: Accepts a variable number of keyword arguments.
+
+**Example**:
+```python
+def print_details(**kwargs):
+    for key, value in kwargs.items():
+        print(f"{key}: {value}")
+print_details(name="Basmala", age=20)  
+# Output:
+# name: Basmala
+# age: 20
+```
+### 4. **Return Statement**
+- Functions can return a value using the `return` statement.
+- If no `return` statement is provided, the function returns `None` by default.
+
+**Example**:
+```python
+def greet(name):
+    return f"Hello, {name}!"
+
+message = greet("Basmala")
+print(message)  # Output: Hello, Basmala!
+
+def no_return():
+    pass
+
+result = no_return()
+print(result)  # Output: None
+```
+---
+## File Handling in Python
+
+Python provides various tools and techniques for working with files and directories.
+
+---
+
+### File Modes
+
+Python supports several file modes for different operations:
+
+- **`"a"` (Append)**: Opens a file for appending data. Creates the file if it does not exist.
+- **`"r"` (Read)**: Opens a file for reading. This is the default mode. Raises an error if the file does not exist.
+- **`"w"` (Write)**: Opens a file for writing. Creates the file if it does not exist.
+- **`"x"` (Create)**: Creates a file. Raises an error if the file already exists.
+
+---
+
+### Working with Directories
+
+The `os` module provides functions to work with directories:
+
+- **`os.getcwd()`**: Returns the current working directory.
+- **`os.path.dirname(os.path.abspath(__file__))`**: Returns the directory of the currently executing script.
+- **`os.chdir(path)`**: Changes the current working directory to the specified path.
+- **`os.path.abspath(file)`**: Returns the absolute path of the specified file.
+
+---
+
+### Important File Operations
+
+Here are some key file operations in Python:
+
+- **`file.truncate(size)`**: Resizes the file to the specified size. If no size is specified, it truncates the file to the current position.
+- **`file.tell()`**: Returns the current position of the file pointer.
+- **`file.seek(offset)`**: Moves the file pointer to the specified offset.
+- **`os.remove(path)`**: Deletes the file at the specified path.
+
+---
+
+### Notes
+
+- Always close files after performing operations using `file.close()` to free up system resources.
+- Use the `with` statement for better file handling, as it automatically closes the file after the operations are complete. 
+
+### Example:
+```python
+with open("example.txt", "w") as file:
+    file.write("Basmala")  # File is automatically closed after this block
+```
+---
+## Python Built-in Functions
+---
+
+### 1. Input/Output Functions
+
+- **`print()`**: Outputs text or variables to the console.
+- **`input()`**: Reads input from the user as a string.
+
+---
+
+### 2. Type Conversion Functions
+
+- **`int()`**: Converts a value to an integer.
+- **`float()`**: Converts a value to a floating-point number.
+- **`str()`**: Converts a value to a string.
+- **`bool()`**: Converts a value to a boolean (`True` or `False`).
+
+---
+
+### 3. Mathematical Functions
+
+- **`abs()`**: Returns the absolute value of a number.
+- **`round()`**: Rounds a number to the nearest integer or specified decimal places.
+- **`min()`**: Returns the smallest value in a sequence.
+- **`max()`**: Returns the largest value in a sequence.
+- **`sum()`**: Returns the sum of all items in a sequence.
+
+---
+
+### 4. Sequence Functions
+
+- **`len()`**: Returns the length of a sequence (e.g., string, list, tuple).
+- **`sorted()`**: Returns a sorted list of the specified iterable.
+- **`reversed()`**: Returns a reversed iterator of a sequence.
+- **`enumerate()`**: Adds a counter to an iterable and returns it as an enumerate object.
+
+---
+
+### 5. String Functions
+
+- **`str.upper()`**: Converts a string to uppercase.
+- **`str.lower()`**: Converts a string to lowercase.
+- **`str.strip()`**: Removes leading and trailing whitespace.
+- **`str.split()`**: Splits a string into a list based on a delimiter.
+- **`str.join()`**: Joins elements of a list into a string.
+
+---
+
+### 6. List Functions
+
+- **`list.append()`**: Adds an element to the end of a list.
+- **`list.remove()`**: Removes the first occurrence of a value from a list.
+- **`list.pop()`**: Removes and returns an element at a given index (default is the last element).
+
+---
+
+### 7. Dictionary Functions
+
+- **`dict.keys()`**: Returns a list of all keys in a dictionary.
+- **`dict.values()`**: Returns a list of all values in a dictionary.
+- **`dict.items()`**: Returns a list of key-value pairs as tuples.
+
+---
+
+### 8. File Handling Functions
+
+- **`open()`**: Opens a file and returns a file object.
+- **`file.read()`**: Reads the entire content of a file.
+- **`file.write()`**: Writes data to a file.
+- **`file.close()`**: Closes the file.
+
+---
+
+### 9. Other Useful Functions
+
+- **`range()`**: Generates a sequence of numbers.
+- **`type()`**: Returns the type of an object.
+- **`isinstance()`**: Checks if an object is an instance of a specific class.
+- **`help()`**: Displays documentation for a function or module.
+
+---
+
+### 10. Lambda and Functional Programming
+
+- **`map()`**: Applies a function to all items in an iterable.
+- **`filter()`**: Filters items in an iterable based on a condition.
+- **`reduce()`**: Applies a function cumulatively to items in an iterable (requires the `functools` module).
+
+---
+
