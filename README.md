@@ -739,4 +739,37 @@ with open("example.txt", "w") as file:
 - **`reduce()`**: Applies a function cumulatively to items in an iterable (requires the `functools` module).
 
 ---
+## Classes and Objects in Python
+
+---
+
+### Classes
+A **class** is a blueprint for creating objects. It defines attributes (variables) and behaviors (methods).
+
+#### Syntax:
+```python
+class ClassName:
+    def __init__(self, param1, param2):
+        self.param1 = param1
+        self.param2 = param2
+    
+    def method_name(self):
+        return f"Values: {self.param1}, {self.param2}"
+```
+
+
+
+
+### Objects
+An **object** is an instance of a class. It has its own values for the attributes defined in the class.
+
+---
+### Key Concepts
+
+- **Encapsulation**: Binding data (attributes) and methods together.
+-  **Inheritance**: Allowing a class to inherit methods and attributes from another class.
+- **Polymorphism**: Different classes can have methods with the same name but different implementations.
+- **Abstraction**: Hiding implementation details and exposing only the necessary functionality.
+
+---
 
