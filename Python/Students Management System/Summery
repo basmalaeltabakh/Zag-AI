@@ -1,10 +1,25 @@
-My Project is to Calculate Students Grades By their Marks in subjects 
-<<Functions>>
-1- IsValid()
-  - checks if name contains only letters
-2- CalcGrade()
-  - calculate Students Grades in specific subject
-3-Dislay()
-  - Display Informations about student and his grades
+(1) Calculate Students Grades By their Marks in subjects 
+Maintains a list of student dictionaries (Students), each containing:
+Name
+Subject
+Marks
+Grade
+Key Functions:
+1. ValidName(name):
+  Checks if the student's name contains only letters.
+2. CalcGrade(grade):
+  Calculates the letter grade (A, B, C, D, F) based on the marks.
+3. Display():
+  Prints all student records in a well-formatted structure.
 
-    
+ -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------   
+
+(2) Create students File 
+1. Creating a Student File
+  A text file is created containing student data (name, subject, and degree).
+2. Loading Student Data
+  The student data is read from the file and converted into a list of dictionaries, where each student is represented as a dictionary with keys for name, subject, and degree.
+3. Validating Student Data:
+   Checks if a student exists in the list based on their name and subject.
+4. Adding a New Student:
+  Allows the user to input a student's name, subject, and degree. The new data is appended to both the file and the list.
