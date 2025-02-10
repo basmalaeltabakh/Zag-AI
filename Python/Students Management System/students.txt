@@ -1,0 +1,9 @@
+Student Name,Subject,Degree
+Tasnim,English,45
+Tahany,Arabic,95
+Menna,Math,75
+Basmala,History,85
+Aml,English,65
+Malak,Math,61
+Mariam,Programming,61
+adbelrahman,math,99
