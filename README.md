@@ -772,4 +772,74 @@ An **object** is an instance of a class. It has its own values for the attribute
 - **Abstraction**: Hiding implementation details and exposing only the necessary functionality.
 
 ---
+## NumPy - Numerical Python
 
+NumPy (Numerical Python) is an open-source library in Python used for handling **arrays** and **multidimensional matrices**, providing many mathematical functions for efficient processing.
+
+###  Why Use NumPy?
+- **Consumes less memory** compared to Python lists.
+- **Faster performance** in mathematical operations than lists.
+- **Easy to use** with a simple interface.
+- **Supports element-wise operations**.
+- **Stores elements contiguously in memory**, enhancing performance.
+- **Highly optimized for numerical computations**.
+- **Integrates well with other libraries like Pandas, SciPy, and Matplotlib**.
+
+###  Comparison Between Python Lists and NumPy Arrays
+#### Python Lists:
+- **Homogeneous**: Can contain elements of the same type.
+- **Heterogeneous**: Can contain elements of different types.
+
+####  NumPy Arrays:
+- All elements in an array **must be of the same type**.
+- You can determine **the storage size required** for the array in advance.
+- **Arrays are indexed from 0**, similar to Python lists.
+- **Supports vectorized operations**, making computations more efficient.
+- **Provides built-in mathematical functions** that operate on entire arrays.
+
+
+
+###  Common NumPy Functions & Examples
+#### Creating Arrays
+```python
+import numpy as np
+arr = np.array([1, 2, 3, 4, 5])
+print(arr)
+```
+
+#### Generating Ranges
+```python
+arr = np.arange(1, 10, 2)  # Generates an array [1, 3, 5, 7, 9]
+print(arr)
+```
+
+#### Creating Zeros and Ones Arrays
+```python
+zeros = np.zeros((3, 3))  # 3x3 matrix filled with zeros
+ones = np.ones((2, 2))    # 2x2 matrix filled with ones
+print(zeros)
+print(ones)
+```
+
+#### Mathematical Operations
+```python
+arr1 = np.array([1, 2, 3])
+arr2 = np.array([4, 5, 6])
+
+sum_arr = arr1 + arr2  # Element-wise addition
+prod_arr = arr1 * arr2  # Element-wise multiplication
+
+print(sum_arr)
+print(prod_arr)
+```
+
+#### Statistical Functions
+```python
+arr = np.array([1, 2, 3, 4, 5])
+print(np.mean(arr))  # Mean
+print(np.median(arr))  # Median
+print(np.std(arr))  # Standard Deviation
+```
+
+
+---
