@@ -843,3 +843,95 @@ print(np.std(arr))  # Standard Deviation
 
 
 ---
+# 2. Introduction to Statistics
+
+## 1. What is Statistics?
+#### Definition
+Statistics is the science of developing and studying methods for collecting, analyzing, interpreting, and presenting empirical data.
+
+#### Key Features
+- Highly interdisciplinary, applicable to virtually all scientific fields.
+- Research questions drive the development of new statistical theories and tools.
+- Relies on mathematical and computational tools, with core concepts like uncertainty and variation.
+- Statistical methods analyze raw data, build models, and draw conclusions.
+
+#### Key Terms
+- **Population**: The entire dataset to be studied.
+- **Sample**: A representative subset of the population.
+- **Variable**: A measurable or countable data item (e.g., age, income).
+
+---
+
+### 2. Types of Analysis
+#### Quantitative Analysis
+- Focuses on numerical data, using patterns and visualizations (e.g., graphs, charts).
+
+#### Qualitative Analysis
+- Extracts insights from non-numerical sources (e.g., text, images).
+
+---
+
+### 3. Types of Statistics
+#### Descriptive Statistics
+- Summarizes data characteristics (e.g., mean, median, mode).
+
+#### Inferential Statistics
+- Uses samples to make predictions about populations (e.g., hypothesis testing, regression).
+
+---
+
+### 4. Core Formulas
+#### Measures of Central Tendency
+
+#### Mean (Average)
+```math
+Mean = \frac{\sum X}{N}
+```
+Where:
+- \( \sum X \) is the sum of all data points
+- \( N \) is the number of data points
+
+#### Median
+- If the dataset size is **odd**: The middle value after sorting.
+- If the dataset size is **even**: The average of the two middle values.
+
+#### Mode
+- The most frequently occurring value in the dataset.
+
+---
+
+### Measures of Spread
+
+#### Range
+```math
+Range = Max\ Value - Min\ Value
+```
+
+#### Variance (\( \sigma^2 \))
+```math
+Variance = \frac{\sum (X - \bar{X})^2}{N}
+```
+Where:
+- \( X \) is each data point
+- \(  bar{X} \) is the mean
+- \( N \) is the number of data points
+
+#### Standard Deviation (\( sigma \))
+```math
+Standard\ Deviation = \sqrt{Variance}
+```
+
+---
+
+## 5. Fundamental Concepts
+
+### Uncertainty
+- Recognizes limitations in data (e.g., sampling errors).
+
+### Variation
+- Differences within datasets (measured via variance or standard deviation).
+
+---
+
+
+
