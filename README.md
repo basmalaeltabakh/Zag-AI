@@ -772,4 +772,166 @@ An **object** is an instance of a class. It has its own values for the attribute
 - **Abstraction**: Hiding implementation details and exposing only the necessary functionality.
 
 ---
+## NumPy - Numerical Python
+
+NumPy (Numerical Python) is an open-source library in Python used for handling **arrays** and **multidimensional matrices**, providing many mathematical functions for efficient processing.
+
+###  Why Use NumPy?
+- **Consumes less memory** compared to Python lists.
+- **Faster performance** in mathematical operations than lists.
+- **Easy to use** with a simple interface.
+- **Supports element-wise operations**.
+- **Stores elements contiguously in memory**, enhancing performance.
+- **Highly optimized for numerical computations**.
+- **Integrates well with other libraries like Pandas, SciPy, and Matplotlib**.
+
+###  Comparison Between Python Lists and NumPy Arrays
+#### Python Lists:
+- **Homogeneous**: Can contain elements of the same type.
+- **Heterogeneous**: Can contain elements of different types.
+
+####  NumPy Arrays:
+- All elements in an array **must be of the same type**.
+- You can determine **the storage size required** for the array in advance.
+- **Arrays are indexed from 0**, similar to Python lists.
+- **Supports vectorized operations**, making computations more efficient.
+- **Provides built-in mathematical functions** that operate on entire arrays.
+
+
+
+###  Common NumPy Functions & Examples
+#### Creating Arrays
+```python
+import numpy as np
+arr = np.array([1, 2, 3, 4, 5])
+print(arr)
+```
+
+#### Generating Ranges
+```python
+arr = np.arange(1, 10, 2)  # Generates an array [1, 3, 5, 7, 9]
+print(arr)
+```
+
+#### Creating Zeros and Ones Arrays
+```python
+zeros = np.zeros((3, 3))  # 3x3 matrix filled with zeros
+ones = np.ones((2, 2))    # 2x2 matrix filled with ones
+print(zeros)
+print(ones)
+```
+
+#### Mathematical Operations
+```python
+arr1 = np.array([1, 2, 3])
+arr2 = np.array([4, 5, 6])
+
+sum_arr = arr1 + arr2  # Element-wise addition
+prod_arr = arr1 * arr2  # Element-wise multiplication
+
+print(sum_arr)
+print(prod_arr)
+```
+
+#### Statistical Functions
+```python
+arr = np.array([1, 2, 3, 4, 5])
+print(np.mean(arr))  # Mean
+print(np.median(arr))  # Median
+print(np.std(arr))  # Standard Deviation
+```
+
+
+---
+# 2. Introduction to Statistics
+
+## 1. What is Statistics?
+#### Definition
+Statistics is the science of developing and studying methods for collecting, analyzing, interpreting, and presenting empirical data.
+
+#### Key Features
+- Highly interdisciplinary, applicable to virtually all scientific fields.
+- Research questions drive the development of new statistical theories and tools.
+- Relies on mathematical and computational tools, with core concepts like uncertainty and variation.
+- Statistical methods analyze raw data, build models, and draw conclusions.
+
+#### Key Terms
+- **Population**: The entire dataset to be studied.
+- **Sample**: A representative subset of the population.
+- **Variable**: A measurable or countable data item (e.g., age, income).
+
+---
+
+### 2. Types of Analysis
+#### Quantitative Analysis
+- Focuses on numerical data, using patterns and visualizations (e.g., graphs, charts).
+
+#### Qualitative Analysis
+- Extracts insights from non-numerical sources (e.g., text, images).
+
+---
+
+### 3. Types of Statistics
+#### Descriptive Statistics
+- Summarizes data characteristics (e.g., mean, median, mode).
+
+#### Inferential Statistics
+- Uses samples to make predictions about populations (e.g., hypothesis testing, regression).
+
+---
+
+### 4. Core Formulas
+#### Measures of Central Tendency
+
+#### Mean (Average)
+```math
+Mean = \frac{\sum X}{N}
+```
+Where:
+- \( \sum X \) is the sum of all data points
+- \( N \) is the number of data points
+
+#### Median
+- If the dataset size is **odd**: The middle value after sorting.
+- If the dataset size is **even**: The average of the two middle values.
+
+#### Mode
+- The most frequently occurring value in the dataset.
+
+---
+
+### Measures of Spread
+
+#### Range
+```math
+Range = Max\ Value - Min\ Value
+```
+
+#### Variance (\( \sigma^2 \))
+```math
+Variance = \frac{\sum (X - \bar{X})^2}{N}
+```
+Where:
+- \( X \) is each data point
+- \(  bar{X} \) is the mean
+- \( N \) is the number of data points
+
+#### Standard Deviation (\( sigma \))
+```math
+Standard\ Deviation = \sqrt{Variance}
+```
+
+---
+
+## 5. Fundamental Concepts
+
+### Uncertainty
+- Recognizes limitations in data (e.g., sampling errors).
+
+### Variation
+- Differences within datasets (measured via variance or standard deviation).
+
+---
+
+
 
