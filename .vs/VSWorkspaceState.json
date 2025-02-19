@@ -1,8 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Python"
+    "\\Python",
+    "\\Python\\NumPy"
   ],
-  "SelectedNode": "\\Python\\1- Student Grade Management System.py",
+  "SelectedNode": "\\Python\\NumPy\\problem6.py",
   "PreviewInSolutionExplorer": false
 }
