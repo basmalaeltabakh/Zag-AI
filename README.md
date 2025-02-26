@@ -1148,6 +1148,155 @@ Left-Skewed:  ←📊
 ```
 
 ---
+## Pandas Library 
+
+- Pandas is a powerful Python library used for data manipulation and analysis. It provides data structures and functions needed to efficiently handle structured data.
+
+---
+
+### Data Structures in Pandas
+
+### 1. Series (1D Array)
+A one-dimensional labeled array that can hold any data type.
+```python
+s = pd.Series([1, 3, 5, 7, 9])
+print(s)
+```
+
+### 2. DataFrame (2D Table)
+A two-dimensional, size-mutable, and heterogeneous data structure.
+- ممكن نعتبرها dictionary
+```python
+data = {'Name': ['Alice', 'Bob'], 'Age': [25, 30]}
+df = pd.DataFrame(data)
+print(df)
+```
+
+---
+
+### Reading & Writing Data
+
+### Read Data
+- **CSV:** `pd.read_csv('file.csv')`
+- **Excel:** `pd.read_excel('file.xlsx')`
+- **JSON:** `pd.read_json('file.json')`
+
+### Write Data
+- **CSV:** `df.to_csv('file.csv', index=False)`
+- **Excel:** `df.to_excel('file.xlsx', index=False)`
+- **JSON:** `df.to_json('file.json')`
+
+---
+
+### Data Manipulation
+
+### Viewing Data
+```python
+df.head()  # First 5 rows
+df.tail()  # Last 5 rows
+df.info()  # Summary
+df.describe()  # Statistical Summary
+```
+
+### Selecting Columns
+```python
+df['Name']  # Select a column
+df[['Name', 'Age']]  # Select multiple columns
+```
+
+### Filtering Data
+```python
+df[df['Age'] > 25]  # Filter rows
+```
+
+### Adding & Removing Columns
+```python
+df['Salary'] = [50000, 60000]  # Add column
+df.drop('Salary', axis=1, inplace=True)  # Remove column
+```
+
+---
+
+### Data Cleaning
+
+### Handling Missing Values
+```python
+df.dropna()  # Remove missing values
+df.fillna(value=0)  # Replace missing values
+df.isnull().sum()  # Count missing values
+```
+
+### Duplicates
+```python
+df.duplicated()  # Check duplicates
+df.drop_duplicates(inplace=True)  # Remove duplicates
+```
+
+---
+
+### Data Aggregation
+
+### Grouping & Aggregation
+```python
+df.groupby('Category').mean()  # Group by category and compute mean
+df.agg({'Age': 'mean', 'Salary': 'sum'})  # Aggregate functions
+```
+
+### Sorting Data
+```python
+df.sort_values(by='Age', ascending=False)
+```
+
+---
+
+## Merging & Joining
+```python
+df1.merge(df2, on='ID', how='inner')  # Merge dataframes on a common column
+df1.join(df2, lsuffix='_left', rsuffix='_right')  # Join on index
+# we always use merge
+```
+- we always use merge 
+---
+
+### Pivot Tables
+```python
+df.pivot_table(values='Sales', index='Region', columns='Year', aggfunc='sum')
+```
+
+---
+
+## Working with Time Series
+```python
+df['Date'] = pd.to_datetime(df['Date'])
+df.set_index('Date', inplace=True)
+df.resample('M').sum()  # Resampling by month
+```
+
+---
+
+## Visualization with Pandas
+```python
+df.plot(kind='line')  # Line plot
+df.hist()  # Histogram
+df.boxplot()  # Box plot
+```
+
+---
+
+## Summary
+| Functionality         | Method/Function |
+|----------------------|----------------|
+| Load CSV            | `pd.read_csv()` |
+| View Data           | `df.head()`      |
+| Select Column       | `df['column']`  |
+| Filter Data         | `df[df['col'] > 5]` |
+| Handle Missing Data | `df.dropna()`    |
+| Aggregate Data      | `df.groupby()`   |
+| Merge DataFrames    | `df.merge()`     |
+| Visualize Data      | `df.plot()`      |
+
+---
+
 
 
 
