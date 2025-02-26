@@ -932,6 +932,97 @@ Standard\ Deviation = \sqrt{Variance}
 - Differences within datasets (measured via variance or standard deviation).
 
 ---
+## Inferential Statistics
+
+Inferential statistics allows us to make predictions or inferences about a population based on a sample of data.
+
+### Key Concepts:
+- Uses probability theory to make generalizations.
+- Includes hypothesis testing, confidence intervals, and regression analysis.
+- Helps in decision-making based on sample data.
+
+---
+
+### Types of Data
+Data is categorized into different types based on its nature and measurement level.
+
+#### **A. Qualitative (Categorical) Data:**
+- **Nominal:** Labels without inherent order (e.g., colors, gender).
+- **Ordinal:** Ordered categories (e.g., satisfaction levels: low, medium, high).
+
+#### **B. Quantitative (Numerical) Data:**
+- **Discrete:** Countable values (e.g., number of students in a class).
+- **Continuous:** Measurable values (e.g., height, weight).
+
+**Example Representation:**
+| Data Type     | Example              |
+|--------------|---------------------|
+| Nominal      | Red, Blue, Green    |
+| Ordinal      | Beginner, Intermediate, Expert |
+| Discrete     | 1, 2, 3, 4, 5        |
+| Continuous   | 5.4, 7.8, 9.1        |
+
+
+---
+
+### Hypothesis Testing
+A statistical method to determine whether there is enough evidence to reject a hypothesis about a population.
+
+#### **Steps:**
+1. Formulate Null (H0) and Alternative (H1) Hypotheses.
+2. Choose a significance level (usually 0.05).
+3. Conduct a test (e.g., t-test, chi-square test).
+4. Calculate the p-value.
+5. Reject or fail to reject H0 based on the p-value.
+
+**Example:** Testing whether a new drug is more effective than an existing one.
+
+
+---
+
+### Confidence Intervals
+A confidence interval provides a range of values that is likely to contain the population parameter.
+
+#### **Formula:**
+\[ CI = \bar{x} \pm Z \frac{\sigma}{\sqrt{n}} \]
+Where:
+- \( \bar{x} \) = Sample Mean
+- \( Z \) = Z-score (based on confidence level)
+- \( \sigma \) = Standard Deviation
+- \( n \) = Sample Size
+
+**Example:** If the confidence interval for the mean weight of apples is (150g, 160g), we are 95% confident that the true mean lies within this range.
+
+
+
+---
+
+### Regression Analysis
+A statistical method for modeling relationships between dependent and independent variables.
+
+#### **Types:**
+- **Simple Linear Regression:** Relationship between two variables (y = mx + c).
+- **Multiple Regression:** Relationship between one dependent and multiple independent variables.
+
+**Example:** Predicting house prices based on size, location, and number of rooms.
+
+![Regression Analysis](https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Linear_regression.svg/800px-Linear_regression.svg.png)
+
+---
+
+### Summary Table
+| Concept                | Purpose                     | Example Use Case |
+|------------------------|---------------------------|-----------------|
+| Inferential Statistics | Make predictions about a population | Election Polling |
+| Types of Data          | Categorize and analyze data | Categorical vs. Numerical |
+| Hypothesis Testing     | Test assumptions about data | New drug effectiveness |
+| Confidence Intervals   | Estimate population parameters | Average weight range |
+| Regression Analysis    | Find relationships between variables | Predicting house prices |
+
+
+---
+---
+
 ## **Types of Graphs and When to Use Them**
 
 ### **1. Histogram**
