@@ -1146,6 +1146,61 @@ Symmetric:    📊
 Right-Skewed: 📊→
 Left-Skewed:  ←📊
 ```
+---
+
+### 8. Heatmap
+
+### Definition:
+A heatmap is a graphical representation of data where values in a matrix are represented as colors. It uses color gradients to show variations in data intensity.
+
+### When to Use:
+- To visualize relationships between two variables (e.g., correlation matrices).
+- To display patterns in large datasets (e.g., user activity over days and hours).
+- To compare values across categories using color intensity.
+
+### Example:
+```
+Time  |  Mon  Tue  Wed  Thu  Fri  
+------------------------------  
+Morning | 🔴🟠🟡🟢🔵  
+Afternoon| 🟢🔵🔴🟠🟡  
+Evening | 🟡🟢🔵🔴🟠  
+(Darker/brighter colors = higher values)
+```
+
+### Key Notes:
+- Uses color gradients (e.g., red for high values, blue for low values).
+- Ideal for matrices (e.g., gene expression data, website click rates).
+
+- **Heatmap:** Analyzing user engagement on a website by hour/day.
+
+---
+
+### 9. Violin Plot
+
+### Definition:
+A violin plot combines features of a box plot and a kernel density plot. It shows the distribution of numerical data, including the median, quartiles, and density.
+
+### When to Use:
+- To visualize the distribution and probability density of data.
+- To compare distributions across multiple groups/categories.
+- To identify bimodality or outliers.
+
+### Example:
+```
+         ░▒▓█████████▓▒░  
+Left     |-----|=====|-----|     Right  
+Group    ░▒▓█████████▓▒░  
+(Wider sections = higher density of data points.)
+```
+
+### Key Notes:
+- Shows the full distribution of data (unlike box plots, which only show summary statistics).
+- Width indicates data density (thicker = more data points).
+
+- **Violin Plot:** Comparing exam scores between different student groups.
+---
+
 
 ---
 ## Pandas Library 
