@@ -1351,6 +1351,137 @@ df.boxplot()  # Box plot
 | Visualize Data      | `df.plot()`      |
 
 ---
+## Seaborn & Matplotlib Guide
+
+**Matplotlib** and **Seaborn** are two powerful Python libraries for data visualization. While Matplotlib provides low-level control over plots, Seaborn builds on Matplotlib to offer beautiful and statistical visualizations with ease.
+
+---
+##  **Matplotlib**
+Matplotlib is a widely used library for creating static, animated, and interactive visualizations in Python.
+
+###  **Basic Plotting**
+```python
+import matplotlib.pyplot as plt
+
+# Sample data
+x = [1, 2, 3, 4, 5]
+y = [10, 20, 25, 30, 40]
+
+# Create a simple line plot
+plt.plot(x, y, marker='o', linestyle='-', color='b', label='Line 1')
+plt.xlabel('X-axis')
+plt.ylabel('Y-axis')
+plt.title('Simple Line Plot')
+plt.legend()
+plt.show()
+```
+
+###  **Types of Plots in Matplotlib**
+1. **Line Plot**
+   ```python
+   plt.plot(x, y, color='r', linestyle='--', marker='o')
+   ```
+2. **Bar Chart**
+   ```python
+   plt.bar(x, y, color='g')
+   ```
+3. **Scatter Plot**
+   ```python
+   plt.scatter(x, y, color='m')
+   ```
+4. **Histogram**
+   ```python
+   plt.hist(y, bins=5, color='c')
+   ```
+5. **Box Plot**
+   ```python
+   plt.boxplot(y)
+   ```
+6. **Pie Chart**
+   ```python
+   labels = ['A', 'B', 'C', 'D', 'E']
+   plt.pie(y, labels=labels, autopct='%1.1f%%', colors=['r', 'g', 'b', 'm', 'y'])
+   ```
+7. **Subplots**
+   ```python
+   fig, axs = plt.subplots(1, 2, figsize=(10, 5))
+   axs[0].plot(x, y, 'r')
+   axs[1].bar(x, y, color='b')
+   ```
+
+###  **Customizing Plots**
+- Change figure size: `plt.figure(figsize=(8,5))`
+- Modify ticks: `plt.xticks(rotation=45)`
+- Add grid: `plt.grid(True)`
+
+---
+##  **Seaborn**
+Seaborn is built on top of Matplotlib and provides high-level functions for statistical visualization.
+```python
+import seaborn as sns
+import matplotlib.pyplot as plt
+
+# Load dataset
+iris = sns.load_dataset('iris')
+
+# Create a scatter plot
+sns.scatterplot(data=iris, x='sepal_length', y='sepal_width', hue='species', style='species')
+plt.title("Iris Dataset Scatter Plot")
+plt.show()
+```
+
+###  **Types of Plots in Seaborn**
+1. **Scatter Plot**
+   ```python
+   sns.scatterplot(data=iris, x='sepal_length', y='sepal_width', hue='species')
+   ```
+2. **Line Plot**
+   ```python
+   sns.lineplot(data=iris, x='sepal_length', y='petal_length', hue='species')
+   ```
+3. **Bar Plot**
+   ```python
+   sns.barplot(data=iris, x='species', y='sepal_length')
+   ```
+4. **Histogram (Distplot)**
+   ```python
+   sns.histplot(data=iris, x='sepal_length', kde=True, bins=20)
+   ```
+5. **Box Plot**
+   ```python
+   sns.boxplot(data=iris, x='species', y='sepal_length')
+   ```
+6. **Heatmap (Correlation Matrix)**
+   ```python
+   corr = iris.corr()
+   sns.heatmap(corr, annot=True, cmap='coolwarm')
+   ```
+7. **Pairplot (Multiple Scatter Plots)**
+   ```python
+   sns.pairplot(iris, hue='species')
+   ```
+
+###  **Customizing Seaborn Plots**
+- **Change Theme:** `sns.set_style('darkgrid')`
+- **Change Figure Size:** `plt.figure(figsize=(8,6))`
+- **Add Titles & Labels:** `plt.title("Title")`, `plt.xlabel("X-axis")`
+
+---
+##  **Matplotlib vs Seaborn**
+| Feature | Matplotlib | Seaborn |
+|---------|-----------|---------|
+| Complexity | Low-level (More Customization) | High-level (Easier to use) |
+| Best for | General plotting | Statistical visualization |
+| Styling | Manual | Built-in themes |
+| Default Aesthetics | Simple | Beautiful & Modern |
+
+---
+##  **Conclusion**
+Both **Matplotlib** and **Seaborn** are powerful libraries for data visualization. Use **Matplotlib** when you need full customization and low-level control. Use **Seaborn** when you want to create beautiful and statistically relevant plots quickly.
+
+---
+
+
 
 
 
